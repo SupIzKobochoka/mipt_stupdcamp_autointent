@@ -87,6 +87,6 @@ introduced in that experiment.
 
 ### `src/experiment_6`
 
-- `[file_a.py]` – Description of module A
-- `[file_b.py]` – Description of module B
-- `...`
+- `AllIntentGenerator.py` - Generator of utterances that uses intent name and explicitly contrasts it with one or more other intents.
+  It prompts a language model to generate candidate utterances for a given intent while ensuring they do not match other intents.
+  The class uses a reasoning-based generation step and a critic model to select the best N examples.
